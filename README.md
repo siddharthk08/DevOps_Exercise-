@@ -1,8 +1,8 @@
 # DevOps_Exercise-
 This project deploys an AWS EC2 instance running a Flask application behind an Application Load Balancer (ALB) using Terraform. The deployment includes a custom security group, VPC configuration, and Gunicorn & Nginx for production readiness.
-#Procedure
 
---**onfiguring Security Group for Port 5000**-By default, the security group allowed only port 80 (HTTP).
+#Procedure
+--**Configuring Security Group for Port 5000**-By default, the security group allowed only port 80 (HTTP).
     Since Flask runs on port 5000, I added an ingress rule to allow traffic on port 5000 from all sources (0.0.0.0/0).
     This was necessary for both load balancer target group health checks and direct testing.
 
