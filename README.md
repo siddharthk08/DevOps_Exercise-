@@ -13,7 +13,7 @@ First, I executed the Terraform script to create an EC2 instance and ALB setup.
     Updated the AMI ID to match my region's available Amazon Linux 2 AMI.
     
 --**Defining VPC Manually Instead of Using a Dynamic One**-
-By default, Terraform can dynamically fetch the VPC ID but sometimes selects the wrong one.
+By default, Terraform can dynamically fetch the VPC ID but sometimes it doesn't extracts vpc when newly account created.
     To avoid misconfiguration, I manually defined the VPC ID instead of relying on data.aws_vpc.default.id.
     This ensured that all subnets and resources were correctly assigned within the intended network.
     
