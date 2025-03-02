@@ -32,5 +32,5 @@ After attaching the instance correctly and using Gunicorn + Nginx, the ALB healt
 Running Terraform Locally Instead of EC2(Running it locally provides better control, easier debugging, and local state management.)
     Performing Health Checks Using AWS CLI Instead of Web Console(This provides faster and more scriptable health checks instead of relying on the AWS website.)
     Ran it firstly by localhost to check its working 
-    Also,one already instance was created even added that to load balancer registery nad even hosted flask server in it to try out does load on Ec2 instance shifts     to another if one Ec2 instance gets to much of requests
+    
   
